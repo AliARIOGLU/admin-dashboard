@@ -1,2 +1,25 @@
+@import "../../styles/variables.scss";
+
 .users {
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    button {
+      padding: 10px 8px;
+      cursor: pointer;
+      border-radius: 8px;
+      background-color: $main-color;
+      font-size: 12px;
+      font-weight: 600;
+      border: 0;
+
+      &:hover {
+        background-color: $soft-bg;
+        color: $main-color;
+      }
+    }
+  }
 }
