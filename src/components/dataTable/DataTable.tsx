@@ -10,25 +10,6 @@ type DataTableProps = {
 };
 
 const DataTable: React.FC<DataTableProps> = ({ columns, rows, slug }) => {
-  // TEST THE API
-
-  // const queryClient = useQueryClient();
-  // // const mutation = useMutation({
-  // //   mutationFn: (id: number) => {
-  // //     return fetch(`http://localhost:8800/api/${slug}/${id}`, {
-  // //       method: "delete",
-  // //     });
-  // //   },
-  // //   onSuccess: ()=>{
-  // //     queryClient.invalidateQueries([`all${slug}`]);
-  // //   }
-  // // });
-
-  const handleDelete = (id: number) => {
-    //delete the item
-    // mutation.mutate(id)
-  };
-
   const actionColumn: GridColDef = {
     field: "action",
     headerName: "Action",
@@ -39,7 +20,7 @@ const DataTable: React.FC<DataTableProps> = ({ columns, rows, slug }) => {
           <Link to={`/${slug}/${params.row.id}`}>
             <img src="/view.svg" alt="" />
           </Link>
-          <div className="delete" onClick={() => handleDelete(params.row.id)}>
+          <div className="delete" onClick={() => {}}>
             <img src="/delete.svg" alt="" />
           </div>
         </div>

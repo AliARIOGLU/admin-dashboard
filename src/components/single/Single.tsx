@@ -22,7 +22,7 @@ type SingleProps = {
 };
 
 const Single: React.FC<SingleProps> = ({
-  id,
+  // id,
   img,
   title,
   info,
