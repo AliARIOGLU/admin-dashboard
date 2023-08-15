@@ -1,22 +1,20 @@
 import "./styles/global.scss";
 
-import {
-  createBrowserRouter,
-  Route,
-  Link,
-  RouterProvider,
-  Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
+// PAGES
+import Login from "./pages/login/Login";
 import Home from "./pages/home/Home";
 import Users from "./pages/users/Users";
+import User from "./pages/user/User";
 import Products from "./pages/products/Products";
+import Product from "./pages/product/Product";
+import NotFound from "./pages/notFound/NotFound";
+
+// COMPONENTS
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
-import Login from "./pages/login/Login";
-import User from "./pages/user/User";
-import Product from "./pages/product/Product";
 
 function App() {
   const Layout = () => {
@@ -60,6 +58,10 @@ function App() {
         {
           path: "/products/:id",
           element: <Product />,
+        },
+        {
+          path: "/*",
+          element: <NotFound />,
         },
       ],
     },

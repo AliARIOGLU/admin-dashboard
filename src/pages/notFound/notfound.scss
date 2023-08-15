@@ -1,0 +1,25 @@
+.notFound {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  p {
+    color: gray;
+    font-weight: 400;
+  }
+
+  .link {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background-color: #2221e7;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background-color: #2121e771;
+    }
+  }
+}

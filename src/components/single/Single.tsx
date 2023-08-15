@@ -39,10 +39,10 @@ const Single: React.FC<SingleProps> = ({
             <button>Update</button>
           </div>
           <div className="details">
-            {Object.entries(info).map((item) => (
-              <div className="item" key={item[0]}>
-                <span className="itemTitle">{item[0]}:</span>
-                <span className="itemValue">{item[1]}</span>
+            {Object.entries(info).map(([key, value]) => (
+              <div className="item" key={key}>
+                <span className="itemTitle">{key}:</span>
+                <span className="itemValue">{value}</span>
               </div>
             ))}
           </div>

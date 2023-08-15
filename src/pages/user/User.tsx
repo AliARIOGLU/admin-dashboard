@@ -1,6 +1,8 @@
-import Single from "../../components/single/Single";
-import { singleUser } from "../../data";
 import "./user.scss";
+import { singleUser } from "../../data";
+
+// COMPONENTS
+import Single from "../../components/single/Single";
 
 const User = () => {
   //Fetch data and send to single component
